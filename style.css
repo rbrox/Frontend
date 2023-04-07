@@ -80,3 +80,25 @@ body{
     background-size: 70px 70px;
     
 }
+
+
+#menu-background-image {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("https://images.unsplash.com/photo-1495291916458-c12f594151e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+    background-position: center;
+    opacity: 0.7;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+
+    transition: opacity 1200ms ease;
+}
+
+#menu-items:hover ~ #menu-background-image{
+    opacity: 0.5;
+}
