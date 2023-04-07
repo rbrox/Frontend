@@ -1,0 +1,82 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #000000;
+    margin: 0px;
+}
+
+#menu{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-item{
+    color: white;
+    font-size: clamp(2.5rem, 3.5rem, 4rem); 
+    font-family: serif;
+    
+    opacity: 0.5;
+    display: block;
+    text-decoration: none;
+    padding: 11px;
+}
+
+#menu-items{
+    margin-left: clamp(4rem, 20vw, 48rem);
+}
+
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+
+#menu-background-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.181) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 60px 60px;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+    transition: opacity 1200ms ease,
+        background-size 1200ms ease;
+}
+
+#menu-items:hover ~ #menu-background-pattern {
+    background-size: 50px 50px;
+}
+
+#menu[data-active-index="0"] #menu-background-pattern {
+    background-size: 55px 55px;
+}
+
+#menu[data-active-index="1"] #menu-background-pattern {
+    
+    background-size: 60px 60px;
+   
+}
+
+#menu[data-active-index="2"] #menu-background-pattern {
+    
+    background-size: 65px 65px;
+    
+}
+
+#menu[data-active-index="3"] #menu-background-pattern {
+    
+    background-size: 70px 70px;
+    
+}
