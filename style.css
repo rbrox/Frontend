@@ -113,3 +113,32 @@ body{
 #menu-items:hover ~ #menu-background-image-1{
     opacity: 0.5;
 }
+
+
+.card {
+    background: #191c29;
+    margin: 20px;
+    width: 35vh;
+    height: 45vh;
+    padding: 3px;
+    position: relative;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: blue;
+  }
+  
+  
